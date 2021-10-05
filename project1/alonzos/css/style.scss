@@ -1,0 +1,252 @@
+@import "_variables";
+@import "_mixins";
+@import "_about";
+@import "_menu";
+@import "_reservation";
+@import "_contact";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: $roboto;
+    font-weight: 300;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 99;
+    a {
+        color: $primary-color-1;
+        text-decoration: none;
+    }
+    ul {
+        li {
+            a {
+                font-size: 1.2em;
+                color: $primary-color-1;
+                text-decoration: none;
+                margin-right: 10px;
+                margin-left: 10px;
+                transition: .5s;
+                &:hover {
+                    font-size: 1.3em;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+    .nav-button {
+        float: right;
+        text-align: center;
+        width: 100%;
+        max-width: 160px;
+        display: block;
+        text-decoration: none;
+        color: $primary-color-1;
+        background-color: transparent;
+        padding: 20px 40px;
+        transition: 0.2s;
+        border: 2px solid $primary-color-1;
+        @include roundedCorners(5px);
+    }
+    .nav-button:hover {
+        font-size: 1.1em;
+        transition: .2s;
+    }
+}
+
+.logo {
+    font-size: 1.25em;
+    font-family: $garamond;
+    margin-top: -20px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+    .letter-a {
+        font-family: $arizonia;
+        font-size: 4em;
+    }
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/homepage_banner_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: $primary-color-2;
+        opacity: 0.35;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        color: $primary-color-1;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        .header-text {
+            font-weight: bold;
+            font-size: 6em;
+            font-family: $garamond;
+        }
+        .header-subtext {
+            font-size: 1.4em;
+            font-family: Arial;
+        }
+        .explore {
+            margin-bottom: 0px;
+            .fa-arrow-alt-circle-down {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+.lg {
+    background-color: $background-change;
+}
+
+.pad-class {
+    padding: 100px 40px 100px 40px;
+}
+
+.form-control {
+    padding: 20px;
+    background-color: #F7F7F7;
+    border-radius: 0%;
+    border: 0px;
+}
+
+.custom-button {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    text-decoration: none;
+    color: $primary-color-1;
+    background-color: $primary-color-2;
+    padding: 20px 40px;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 0;
+    margin-top: auto;
+    @include roundedCorners(3px);
+    &:hover {
+        color: $primary-color-1;
+        text-decoration: none;
+        background-color: $button-hover;
+        transition: 0.5s;
+    }
+}
+
+.custom-button.right-button {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.section-title {
+    font-family: $garamond;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.section-para.text-center {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    font-family: $arizonia;
+    font-size: 30px;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.extra-space {
+    margin-bottom: 120px;
+}
+
+.required-red {
+    color: red;
+}
+
+.remove-pad-top {
+    padding-top: 0px;
+}
+
+footer {
+    color: $primary-color-1;
+    padding: 100px;
+    background-color: $primary-color-2;
+    .footer-title {
+        font-family: $garamond;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    a {
+        color: $primary-color-1;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $primary-color-1;
+        }
+    }
+    .fab {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+      }
+    nav.navbar.navbar-expand-md {
+        background-color: $primary-color-2;
+        padding: 5px 0px 0px 5px;
+        a.nav-button {
+            display: none;
+        }
+    }
+    .header {
+        .text-container {
+            .header-text {
+                font-size: 60px;
+            }
+            .header-subtext {
+                font-size: 20px;
+            }
+            .explore {
+                display: none;
+            }
+        }
+    }
+    .navbar-text {
+        display: none;
+    }
+    footer {
+       padding: 30px; 
+    }
+    .section-title {
+        font-size: 1.6em;
+    }
+    .top-fix {
+        margin-top: 10px;
+    }
+    .pad-class {
+        padding: 50px 20px;
+    }
+  }

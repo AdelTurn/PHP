@@ -1,0 +1,42 @@
+.header-about {
+    position: relative;
+    height: 55vh;
+    background-image: url('../img/about_banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: $primary-color-2;
+        opacity: 0.35;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        color: $primary-color-1;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        .header-text {
+            font-weight: bold;
+            font-size: 5em;
+            font-family: $garamond;
+        }
+    }
+}
+
+.title-spacer {
+    margin-top: 50px;
+}
+
+#img-fix {
+    width: 100%;
+}
+
+#img-fix2 {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

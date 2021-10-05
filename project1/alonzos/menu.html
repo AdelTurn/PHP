@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alonzo's - Menu</title>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--My Script-->
+    <script src="js/myscript.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="d-flex w-50 order-0">
+            <a class="navbar-brand mr-1 logo" href="index.html"><span class="letter-a">A</span>lonzo's</a>
+        </div>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservations.html">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">
+            <a href="reservations.html" class="nav-button">Book a Table</a>
+        </span>
+    </nav>
+    <div class="header-menu">
+        <div class="overlay">
+
+        </div>
+        <div class="text-container">
+            <p class="header-text">Menu</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="lg">
+            <div class="container pad-class">
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <p class="section-title">Are handcrafted menu, contains only the best dishes and ingredients for our guests.</p>
+                        <p class="section-para">
+                            Fresh from scratch food is what you can expect from us at Alonzo's. From classics you love to new exciting dishes we have packed it all into one stellar menu.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                    </div>
+                </div>
+                <div class="menu-wrapper">
+                    <p class="main-menu-title">- Menu -</p>
+                    <div class="container">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item cstm-item"><a data-toggle="tab" href="#wi" class="nav-link active">Wine</a></li>
+                            <li class="nav-item cstm-item"><a data-toggle="tab" href="#st" class="nav-link">Starters</a></li>
+                            <li class="nav-item cstm-item"><a data-toggle="tab" href="#ma" class="nav-link">Main</a></li>
+                            <li class="nav-item cstm-item"><a data-toggle="tab" href="#si" class="nav-link">Sides</a></li>
+                            <li class="nav-item cstm-item"><a data-toggle="tab" href="#de" class="nav-link">Desserts</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="wi" class="tab-pane active">
+                                <p class="menu-subtitle">Red Wine</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Sweet Red Roscato Rosso Dolce</p>
+                                                    <p class="menu-info">Sweet red win</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$9.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Pinot Noir Meiomi</p>
+                                                    <p class="menu-info">Dry red aged wine</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$12.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Merlot Beringer</p>
+                                                    <p class="menu-info">Sweet red merlot with deep flavor</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$10.50</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Cabernet Dreaming Tree</p>
+                                                    <p class="menu-info">Aged sweet red wine</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$14.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="menu-subtitle">White Wine</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Moscato Primo Amore</p>
+                                                    <p class="menu-info">Basic lovely dry white wine</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$9.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Moscato Castello del Poggio</p>
+                                                    <p class="menu-info">Imported aged white wine</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$15.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Riesling Chateau Ste. Michelle</p>
+                                                    <p class="menu-info">Sweet Tasting Riesling</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$12.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Pinot Grigio Cavit</p>
+                                                    <p class="menu-info">Perfect dry pinot grigio</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$11.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="st" class="tab-pane">
+                                <p class="menu-subtitle">Appetizers</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Tomato Bruschetta</p>
+                                                    <p class="menu-info">Tomatoes, Olive Oil, Cheese</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$11.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Calamari</p>
+                                                    <p class="menu-info">Tender Breaded Calamari</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$15.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Spinach-Artichoke Dip</p>
+                                                    <p class="menu-info">Spinach, Artichoke, Cheese, Pita Bread</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$14.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Smoked Salmon Dip</p>
+                                                    <p class="menu-info">Smoked salmon dip and crostinis</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$16.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Sausage Stuffed Mushrooms</p>
+                                                    <p class="menu-info">sausage, mushrooms, mozzarella</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$13.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Mussels</p>
+                                                    <p class="menu-info">Mussels and red wine sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$12.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="menu-subtitle">Salad</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">House Salad</p>
+                                                    <p class="menu-info">Iceberg, crutons, House dressing</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$9.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Cesar Salad</p>
+                                                    <p class="menu-info">Romaine, crutons, cesar dressing</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$9.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Wedge Salad</p>
+                                                    <p class="menu-info">Iceberg, bluecheese dressing, bacon</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$10.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Waldorf</p>
+                                                    <p class="menu-info">Spring greens, apples, Waldorf dressing</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$10.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="menu-subtitle">Soup</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Soup Du Jour</p>
+                                                    <p class="menu-info">Soup of the Day</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$8.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lobster Bisque</p>
+                                                    <p class="menu-info">Lobster, Butter, Garlic</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$15.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ma" class="tab-pane">
+                                <p class="menu-subtitle">Pasta</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Spaghetti & Meatballs</p>
+                                                    <p class="menu-info">Spaghetti, tomato sauce, meatballs</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lasagna</p>
+                                                    <p class="menu-info">sweet Italian sausage, tomato sauce, basil</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$22.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Alonzo's Linguine</p>
+                                                    <p class="menu-info">Linguine, parmesan, garlic, black truffle</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$27.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Fettucine Alfredo</p>
+                                                    <p class="menu-info">fettucine, alfredo sauce, chicken breast</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Creamy Goat Cheese Pasta</p>
+                                                    <p class="menu-info">Bucatini, goat cheese, spinach</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$20.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Shrimp Scampi</p>
+                                                    <p class="menu-info">Shrimp, lemon butter sauce, garlic</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$24.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="menu-subtitle">Steaks & Chicken</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Chicken Parmesan</p>
+                                                    <p class="menu-info">Fried chicken cutlet, mozzarella, sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$25.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Medallion Trio</p>
+                                                    <p class="menu-info">Parmesan, lobster butter, Bluecheese</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$42.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lemon Butter Chicken</p>
+                                                    <p class="menu-info">Lemon butter, chicken, mashed potatoes</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$23.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Wagyu Filet & Risotto</p>
+                                                    <p class="menu-info">Wagyu steak, white wine risotto, Asparagus</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$55.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Chicken Marsala</p>
+                                                    <p class="menu-info">Mushroom marsala wine sauce, chicken</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$26.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Land & Sea</p>
+                                                    <p class="menu-info">Wagyu Filet, Lobster tail, mashed potatoes</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$63.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="menu-subtitle">Seafood</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lobster Dinner</p>
+                                                    <p class="menu-info">Lobster tail, butter, mashed potatoes</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$36.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lobster Mac & Cheese</p>
+                                                    <p class="menu-info">Lobster meat, 4 cheese sauce, macaroni</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$30.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Salmon</p>
+                                                    <p class="menu-info">Salmon, asparagus, white wine risotto</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$32.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Sea Scallops</p>
+                                                    <p class="menu-info">Scallops, Lemon Butter, garlic</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$32.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Lobster Spaghetti</p>
+                                                    <p class="menu-info">spaghetti, bacon, lobster cream sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$33.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Crab-Stuffed Cod</p>
+                                                    <p class="menu-info">Atlantic cod, crabmeat, lemon butter</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$32.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="si" class="tab-pane">
+                                <p class="menu-subtitle">Sides</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Mashed Potatoes</p>
+                                                    <p class="menu-info">Potatoes, Cream, Butter</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$5.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Asparagus</p>
+                                                    <p class="menu-info">Asparagus, garlic, butter</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$6.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Risotto</p>
+                                                    <p class="menu-info">Risotto, Red or White wine Sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$9.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Side House Salad</p>
+                                                    <p class="menu-info">Iceberg, crutons, house dressing</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$7.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="de" class="tab-pane">
+                                <p class="menu-subtitle">Desserts</p>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Chocolate Lava Cake</p>
+                                                    <p class="menu-info">Chocolate Lava Cake and Ice Cream</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$11.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Creme Brulee</p>
+                                                    <p class="menu-info">Custard, Caramalized Sugar</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$10.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Tiramisu</p>
+                                                    <p class="menu-info">Coffee, Cake, Chocolate Sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$10.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Strawberry Cheesecake</p>
+                                                    <p class="menu-info">Cheesecake, Strawberries</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$12.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Limoncello Cake</p>
+                                                    <p class="menu-info">Citrus Cake, lemon custard, berries</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$12.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <div class="menu-item-wrapper">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                                    <p class="menu-title">Ice Cream Sundae</p>
+                                                    <p class="menu-info">ice cream, banana, chocolate sauce</p>
+                                                </div>
+                                                <div class="col-12 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                    <p class="menu-price">$8.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-title"><span class="letter-a">A</span>lonzo's</p>
+                <p>Alonzo’s is a fine dining Italian restaurant that has been serving it's community with great food and
+                    impeccable service for 5 years now and will continue to do so.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-title">ADDRESS</p>
+                <span>58 Johnson Ave <br>Des moines, Iowa 1111</span>
+                <br>
+                <br>
+                <span>P: +1 800 000 111</span>
+                <br>
+                <span>E: contact@example.com</span>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-title">ADDRESS</p>
+                <span>Monday – Sunday</span>
+                <br>
+                <span>Lunch: 12PM – 2PM</span>
+                <br>
+                <span>Dinner: 6PM – 10PM</span>
+                <br>
+                <br>
+                <span>Happy Hours: 4PM – 6PM</span>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-title">SITE MAP</p>
+                <span><a href="index.html">Home</a></span>
+                <br>
+                <span><a href="about.html">About</a></span>
+                <br>
+                <span><a href="menu.html">Menu</a></span>
+                <br>
+                <span><a href="reservations.html">Reservations</a></span>
+                <br>
+                <span><a href="contact.html">Contact</a></span>
+            </div>
+            <div class="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-12 top-fix">
+                <p>&copy;<script>document.write(currentCopyright());</script>, Alonzo's Fine Dining</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 top-fix">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
