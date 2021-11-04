@@ -1,0 +1,524 @@
+p {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+nav {
+  font-family: 'Lato', sans-serif;
+  height: 7vh;
+  position: relative;
+  z-index: auto;
+  overflow: hidden;
+}
+
+nav .purpleBlock {
+  background-color: #C37AF5;
+  width: 1000px;
+  height: 2000px;
+  position: absolute;
+  left: 55%;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav div.container-fluid div#navNavbar ul.navbar-nav {
+  z-index: 10;
+}
+
+nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item {
+  margin: auto 10px;
+}
+
+nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+  font-size: large;
+}
+
+.header1 {
+  position: relative;
+  z-index: 10;
+  height: 93vh;
+  background-image: url("../images/finished/pet-care-coronavirus-happy-dog-and-cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header1 .overlay {
+  background-color: black;
+  opacity: 0.30;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header1 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 70%;
+  color: white;
+}
+
+.header1 .text-container .header-text {
+  font-weight: bold;
+  font-size: 5em;
+  font-family: 'Lora', serif;
+}
+
+.header1 .text-container .headButton {
+  background-color: #7B20B7;
+  padding: 10px 100px;
+  border-radius: 17px;
+  color: white;
+  margin-top: 40px;
+  border: 1px inset white;
+}
+
+.wBlock .secContainer {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.wBlock .secContainer h1 {
+  text-align: center;
+  margin-top: 70px;
+  color: #7B20B7;
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 700;
+}
+
+.wBlock .secContainer .introImg {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.wBlock .secContainer p {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 85%;
+}
+
+.wBlock .secContainer button {
+  padding: 10px 60px;
+  background-color: #7B20B7;
+  color: white;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.wBlock .secContainer .container .row .serviceBlock1 {
+  width: 250px;
+  margin: 50px 20px;
+}
+
+.wBlock .secContainer .container .row .serviceBlock1 h3 {
+  background-color: #A963D8;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.wBlock .secContainer .container .row .serviceBlock2 {
+  width: 250px;
+  height: 400px;
+  margin: 75px 20px;
+}
+
+.wBlock .secContainer .container .row .serviceBlock2 h3 {
+  background-color: #A963D8;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.wBlock .docContainer {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.wBlock .docContainer h2, .wBlock .docContainer h4, .wBlock .docContainer p {
+  margin: 20px;
+}
+
+.pBlock {
+  background-color: #A963D8;
+  color: white;
+  z-index: 1;
+}
+
+.pBlock .secContainer {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.pBlock .secContainer h1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pBlock .secContainer .container .row .leftCol {
+  text-align: right;
+}
+
+.pBlock .secContainer .container .row .leftCol div {
+  height: 250px;
+}
+
+.pBlock .secContainer .container .row .leftCol div i {
+  color: #7B20B7;
+}
+
+.pBlock .secContainer .container .row .rightCol {
+  text-align: left;
+}
+
+.pBlock .secContainer .container .row .rightCol div {
+  height: 250px;
+}
+
+.pBlock .secContainer .container .row .rightCol div i {
+  color: #7B20B7;
+}
+
+.pBlock .secContainer .container .row .middleCol img {
+  display: block;
+  width: 250px;
+  margin: auto;
+  overflow: auto;
+  z-index: 100;
+  margin-top: 50px;
+}
+
+.pBlock .secContainer img {
+  margin: auto;
+}
+
+.pBlock .docContainer {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.pBlock .docContainer h2, .pBlock .docContainer h4, .pBlock .docContainer p {
+  margin: 20px;
+}
+
+footer {
+  color: white;
+  padding: 75px 100px;
+  background-color: #000;
+}
+
+footer .footerContent {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+footer .footerContent .footerLogo {
+  width: 80px;
+}
+
+footer .footerContent a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+footer .footerContent a:hover {
+  color: #C37AF5;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+.header2 {
+  position: relative;
+  height: 43vh;
+  background-image: url("../images/finished/header_about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header2 .overlay {
+  background-color: black;
+  opacity: 0.20;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header2 .text-container {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: white;
+}
+
+.header2 .text-container .header-text {
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.header2 .text-container .header-subtext {
+  font-size: 1.4em;
+  font-family: Arial;
+}
+
+.header2 .text-container .explore {
+  margin-bottom: 0px;
+}
+
+.header2 .text-container .explore .fa-arrow-alt-circle-down {
+  font-size: 40px;
+}
+
+.header3 {
+  position: relative;
+  height: 43vh;
+  background-image: url("../images/finished/header_services.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header3 .overlay {
+  background-color: black;
+  opacity: 0.20;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header3 .text-container {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: white;
+}
+
+.header3 .text-container .header-text {
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.header3 .text-container .header-subtext {
+  font-size: 1.4em;
+  font-family: Arial;
+}
+
+.header3 .text-container .explore {
+  margin-bottom: 0px;
+}
+
+.header3 .text-container .explore .fa-arrow-alt-circle-down {
+  font-size: 40px;
+}
+
+.header4 {
+  position: relative;
+  height: 43vh;
+  background-image: url("../images/finished/header_appointment.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header4 .overlay {
+  background-color: black;
+  opacity: 0.35;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header4 .text-container {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: white;
+}
+
+.header4 .text-container .header-text {
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.header4 .text-container .header-subtext {
+  font-size: 1.4em;
+  font-family: Arial;
+}
+
+.header4 .text-container .explore {
+  margin-bottom: 0px;
+}
+
+.header4 .text-container .explore .fa-arrow-alt-circle-down {
+  font-size: 40px;
+}
+
+.header5 {
+  position: relative;
+  height: 43vh;
+  background-image: url("../images/finished/header_contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header5 .overlay {
+  background-color: black;
+  opacity: 0.35;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header5 .text-container {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  color: white;
+}
+
+.header5 .text-container .header-text {
+  font-weight: bold;
+  font-size: 6em;
+}
+
+.header5 .text-container .header-subtext {
+  font-size: 1.4em;
+  font-family: Arial;
+}
+
+.header5 .text-container .explore {
+  margin-bottom: 0px;
+}
+
+.header5 .text-container .explore .fa-arrow-alt-circle-down {
+  font-size: 40px;
+}
+
+.bLabel {
+  display: block;
+}
+
+.wInput, select {
+  width: 100%;
+  background-color: #F7F7F7;
+  border: none;
+  padding: 7px;
+  margin: 15px 0px;
+}
+
+#form6Example7 {
+  background-color: #F7F7F7;
+  border: none;
+  margin: 15px 0px;
+}
+
+.doctorImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #7B20B7 !important;
+}
+
+nav.stroke ul li a {
+  -webkit-transition: all 1s !important;
+  transition: all 1s !important;
+}
+
+nav.stroke ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.vetBio {
+  text-align: left !important;
+}
+
+.requiredRed {
+  color: red;
+  margin: 5px;
+  font-size: larger;
+}
+
+.subButton {
+  background-color: #9529DB;
+  color: white;
+  padding: 15px 50px;
+  border: none;
+  -webkit-transition: .75s;
+  transition: .75s;
+  margin: 20px auto;
+}
+
+.subButton:hover {
+  -webkit-transition: .75s;
+  transition: .75s;
+  background-color: #470672;
+}
+
+.radioCon {
+  margin: auto;
+}
+
+.radioCon .form-check-input:checked {
+  background-color: #C37AF5;
+}
+/*# sourceMappingURL=style.css.map */

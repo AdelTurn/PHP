@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/48c4ec733a.js" crossorigin="anonymous"></script>
+
+    <!--My Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="border-bottom site-header sticky-top bg-white">
+        <nav class="navbar navbar-light navbar-expand-lg bg-white stroke">
+            <div class="purpleBlock"></div>
+            <div class="container-fluid">
+                <div class="d-flex flex-grow-1">
+                    <a href="index.html" class="navbar-brand col-md-3 bg-white">
+                        <img src="images/finished/mpIcon.png" class="img-fluid logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNavbar" aria-controls="navNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-1 text-right" id="navNavbar">
+                    <ul class="navbar-nav ms-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link px-2 m-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 m-2 link-secondary" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 m-2 link-secondary" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 m-2 link-secondary" href="appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 m-2 link-secondary" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="header4">
+        <div class="overlay">
+
+        </div>
+        <div class="text-container">
+            <p class="header-text">Book an Appointment</p>
+        </div>
+    </div>
+    <div class="wBlock">
+        <div class="secContainer">
+            <form>
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="firstName" class="bLabel">First Name<span class="requiredRed">*</span></label>
+                            <input type="text" name="firstName" id="firstName" class="wInput" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="lastName" class="bLabel">Last Name<span class="requiredRed">*</span></label>
+                            <input type="text" name="lastName" id="lastName" class="wInput" required>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="bLabel">Email<span class="requiredRed">*</span></label>
+                    <input type="email" name="email" id="email" class="wInput" required>
+                </div>
+                <div>
+                    <label for="phone" class="bLabel">Phone<span class="requiredRed">*</span></label>
+                    <input type="text" name="phone" id="phone" class="wInput" required>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="petName" class="bLabel">Pet Name<span class="requiredRed">*</span></label>
+                            <input type="text" name="petName" id="petName" class="wInput" required>
+                        </div>
+                    </div>
+                    <div class="col-6 radioCon">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                            <label class="form-check-label" for="inlineRadio1">New Pet</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Existing Pet</label>
+                        </div>
+                        <span class="requiredRed">*</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="visitReason" class="bLabel">Reason for Visit<span class="requiredRed">*</span></label>
+                            <select name="visitReason" id="visitReason" required>
+                                <option value="">Choose a Reason</option>
+                                <option value="checkUp">Check Up</option>
+                                <option value="spayNeuter">Spay or Neuter</option>
+                                <option value="dentalCare">Dental</option>
+                                <option value="dermaCare">Dermatology</option>
+                                <option value="microChip">Microchipping</option>
+                                <option value="paraControl">Parasite Control</option>
+                                <option value="vacShot">Vaccination</option>
+                                <option value="nailTrim">Nail Trimming</option>
+                                <option value="emCare">Emergency Care</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="prefDoc" class="bLabel">Preffered Doctor<span class="requiredRed">*</span></label>
+                            <select name="prefDoc" id="prefDoc" required>
+                                <option value="anyDoc">Any Doctor</option>
+                                <option value="saraJ">Sara Johnson</option>
+                                <option value="alanG">Alan Green</option>
+                                <option value="jenniferS">Jennifer Smith</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div>
+                            <label for="date" class="bLabel">Date<span class="requiredRed">*</span></label>
+                            <input type="date" id="date" class="wInput" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div>
+                            <label for="time" class="bLabel">Time<span class="requiredRed">*</span></label>
+                            <select name="time" id="time" required>
+                                <option value="">Choose a Reason</option>
+                                <option value="">6:00 AM</option>
+                                <option value="">6:30 AM</option>
+                                <option value="">7:00 AM</option>
+                                <option value="">7:30 AM</option>
+                                <option value="">8:00 AM</option>
+                                <option value="">8:30 AM</option>
+                                <option value="">9:00 AM</option>
+                                <option value="">9:30 AM</option>
+                                <option value="">10:00 AM</option>
+                                <option value="">10:30 AM</option>
+                                <option value="">11:00 AM</option>
+                                <option value="">11:30 AM</option>
+                                <option value="">12:00 PM</option>
+                                <option value="">12:30 PM</option>
+                                <option value="">1:00 PM</option>
+                                <option value="">1:30 PM</option>
+                                <option value="">2:00 PM</option>
+                                <option value="">2:30 PM</option>
+                                <option value="">3:00 PM</option>
+                                <option value="">3:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example7">Additional information</label>
+                    <textarea class="form-control" id="form6Example7" rows="6"></textarea>
+                </div>
+                <input type="submit" class="subButton">
+              </form>
+        </div>
+    </div>
+    <footer>
+        <div class="row footerContent">
+            <a href="index.html">
+                <img src="images/finished/mpIcon.png" class="logo">
+            </a>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 footerBlock">
+                <p class="footer-title">Magic Paws</p>
+                <p>Magic Paws is a neighborhood veterinary clinic that has been serving its community for over a decade now. Fixing one paw at a time, all the time.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 footerBlock">
+                <p class="footer-title">ADDRESS</p>
+                <span>18 Johnson Ave <br>Des moines, Iowa 50047</span>
+                <br>
+                <br>
+                <span>Phone: 515-123-4567</span>
+                <br>
+                <span>Email: magicpaws@example.com</span>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 footerBlock">
+                <p class="footer-title">HOURS</p>
+                <span>Monday – Friday</span>
+                <br>
+                <span>6am - 4pm</span>
+                <br>
+                <br>
+                <span>Emergency Hours</span>
+                <br>
+                <span>24/7 Call ahead</span>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 footerBlock">
+                <p class="footer-title">SITE MAP</p>
+                <span><a href="index.html">Home</a></span>
+                <br>
+                <span><a href="about.html">About</a></span>
+                <br>
+                <span><a href="service.html">Services</a></span>
+                <br>
+                <span><a href="appointment.html">Appointment</a></span>
+                <br>
+                <span><a href="contact.html">Contact</a></span>
+            </div>
+            <div class="col-12 col-lg-9 col-md-9 col-sm-12 col-xs-12 top-fix order-1">
+                <p>&copy;<script>document.write(currentCopyright());</script>, Magic Paws Veterinary Clinic</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-xs-12 top-fix order-2">
+            </div>
+        </div>
+    </footer>
+
+      <!-- Bootstrap Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
