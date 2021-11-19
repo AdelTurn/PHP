@@ -27,7 +27,7 @@ class Event {
     //processing methods
     
 
-}
+}//end event class definition
 
 
 ?>

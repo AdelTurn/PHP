@@ -21,7 +21,7 @@
     include '../../../unit6/6-2/dbConnect.php';
 
     try {
-        $sql = "SELECT product_name, product_description, product_price, product_image, product_status, product_inStock FROM wdv341_products;";
+        $sql = "SELECT product_name, product_description, product_price, product_image, product_status, product_inStock FROM wdv341_products ORDER BY product_name DESC;";
         $stmt = $conn->prepare($sql);   //prepare statment
         $stmt->execute();
 
@@ -61,17 +61,6 @@
         this layout and following the instructions of the assignment. -->
 
         <div class="productBlock">
-            <div class="productImage">
-                <image src="productImages/monitor.jpg">
-            </div>
-            <p class="productName">New 27" Monitor</p>
-            <p class="productDesc">This is a new monitor. Available for desktop uses. A good choice for home office and school work.</p>
-            <p class="productPrice">$159.00</p>
-            <!-- The productStatus element should only be displayed if there is product_status data in the record -->
-            <p class="productStatus">New Item!</p>            
-            <p class="productInventory"># In Stock!</p>
-        </div>
-        <div class="productBlock">
                 <div class="productImage">
                     <image src="productImages/<?php echo $result['product_image']; ?>">
                 </div>
@@ -86,7 +75,17 @@
                     <?php
                     }
                 ?>           
-                <p class="productInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                <?php 
+                    if($result['product_inStock'] < 10){
+                    ?>
+                    <p class="productStatus productLowInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                    <?php
+                    }
+                    else {
+                        ?>
+                        <p class="productInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                        <?php
+                    }?>  
             </div>
 
         <?php 
@@ -107,8 +106,18 @@
                     <p class="productStatus"><?php echo $result['product_status']; ?></p>
                     <?php
                     }
-                ?>           
-                <p class="productInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                ?>
+                <?php 
+                    if($result['product_inStock'] < 10){
+                    ?>
+                    <p class="productStatus productLowInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                    <?php
+                    }
+                    else {
+                        ?>
+                        <p class="productInventory"><?php echo $result['product_inStock']; ?> In Stock!</p>
+                        <?php
+                    }?>     
             </div>
         <?php   
         }//end of foreach loop

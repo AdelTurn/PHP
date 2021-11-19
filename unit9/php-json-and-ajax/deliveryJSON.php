@@ -18,6 +18,8 @@
                 use a foreach loop to access each row to build the output
     */
 
+    $productArray = []; //create array to store products
+
     include '../../unit6/6-2/dbConnect.php';
 
     try {
@@ -35,9 +37,11 @@
         $productObj->product_status = $result['product_status'];
         $productObj->product_inStock = $result['product_inStock'];    
 
-        $productJSON = json_encode($productObj);    //convert php object into a json object
+        //$productJSON = json_encode($productObj);    //convert php object into a json object
 
-        echo $productJSON;
+        //echo $productJSON;
+
+        array_push($productArray, $productObj);  //add first product to array
 
         foreach($stmt->fetchAll(PDO::FETCH_ASSOC) as $result) {
             $productObj = new stdClass();               // creates generic php object
@@ -48,10 +52,19 @@
             $productObj->product_status = $result['product_status'];
             $productObj->product_inStock = $result['product_inStock'];  
             
-            $productJSON = json_encode($productObj);    //convert php object into a json object
+            //$productJSON = json_encode($productObj);    //convert php object into a json object
 
-            echo $productJSON; 
+            //echo $productJSON; 
+
+            array_push($productArray, $productObj);  //add rest of products to array
+
         }//end of forEach row on the database result
+
+        //echo $productArray;
+
+        $productArrayJSON = json_encode($productArray);
+
+        echo $productArrayJSON; //return JSON formatted array of objects
 
     }
     catch(PDOException $e) {
