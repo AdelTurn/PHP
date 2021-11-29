@@ -24,6 +24,13 @@ class Event {
         return $this->eventName;
     }
 
+    function setEventDescription($inDescription) {
+        return $this->eventDescription = $inDescription;
+    }
+    function getEventDescription() {
+        return $this->getEventDescription;
+    }
+
     //processing methods
     
 
