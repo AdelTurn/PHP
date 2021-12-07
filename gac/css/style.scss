@@ -1,0 +1,820 @@
+$green: #4CB944;
+$teal: #225560;
+
+$headerFont: 'Ubuntu', sans-serif;
+$navFont: 'Work Sans', sans-serif;
+$bodyFont: 'Roboto', sans-serif;
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: $bodyFont;
+    font-weight: 400;
+    p {
+        font-size: large;
+    }
+}
+
+h1,h2,h3,h4,h5,h6, .header-text {
+    font-family: $headerFont;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: $green;
+    a {
+        text-decoration: none;
+        color: $green;
+        &:hover {
+            color: green;
+        }
+    }
+}
+#donate-button {
+    max-width: 200px;
+}
+
+nav.navbar  {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    z-index: 99;
+    .container-fluid {
+        .navbar-toggler {
+            background-color: white;
+        }
+        .navbar-brand {
+            color: white;
+        }
+        .navbar-nav {
+            a {
+                font-size: 1.2em;
+                $navFont: 'Work Sans', sans-serif;
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+                margin-left: 15px;
+                transition: .5s;
+                &:hover {
+                    transition: .5s;
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+.header1 {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/indexHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: black;
+        opacity: 0.4;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        .header-text {
+            font-weight: bold;
+            font-size: 3.5em;
+            color: white;
+        }
+    }
+}
+
+.header2 {
+    position: relative;
+    height: 50vh;
+    background-image: url("../img/aboutHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: black;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        .header-text {
+            font-weight: bold;
+            font-size: 3.5em;
+            color: white;
+        }
+    }
+}
+.header3 {
+    position: relative;
+    height: 50vh;
+    background-image: url("../img/donationHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: black;
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        .header-text {
+            font-weight: bold;
+            font-size: 3.5em;
+            color: white;
+        }
+    }
+}
+.header4 {
+    position: relative;
+    height: 50vh;
+    background-image: url("../img/storeHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: black;
+        opacity: 0.4;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        .header-text {
+            font-weight: bold;
+            font-size: 3.5em;
+            color: white;
+        }
+    }
+}
+.header5 {
+    position: relative;
+    height: 50vh;
+    background-image: url("../img/contactHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay {
+        background-color: black;
+        opacity: 0.55;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 50%;
+        .header-text {
+            font-weight: bold;
+            font-size: 3.5em;
+            color: white;
+        }
+    }
+}
+
+.bodyContainer {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    .quote {
+        margin-top: 100px;
+        font-size: 3em;
+        text-align: left;
+    }
+    .sidePics {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+        h2 {
+            color: white;
+            position: relative;
+            z-index: 10;
+            padding: 20px 30px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .pic1{
+            width: 100%;
+            max-width: 300px;
+            height: 250px;
+            background-image: url(../img/home1.jpg);
+            position: relative;
+            margin: auto;
+            .overlay {
+                background-color: black;
+                opacity: 0.25;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .pic2{
+            width: 100%;
+            max-width: 300px;
+            height: 350px;
+            background-image: url(../img/home2.jpg);
+            position: relative;
+            margin: auto;
+            .overlay {
+                background-color: black;
+                opacity: 0.25;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .pic3{
+            width: 100%;
+            max-width: 300px;
+            height: 250px;
+            background-image: url(../img/home3.jpg);
+            position: relative;
+            margin: auto;
+            .overlay {
+                background-color: black;
+                opacity: 0.25;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .pic1, .pic3 {
+            margin-top: 100px;
+        }
+    }
+    .donateBlock {
+        margin: 100px 0px;
+        width: 100%;
+        .numRaised {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .lower {
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        .greatApeImg {
+            width: 100%;
+            max-width: 300px;
+            height: 100%;
+        }
+    }
+    .carouselContainer {
+        margin: 50px 0px 0px 0px;
+        width: 100%;
+        .overlay {
+            background-color: black;
+            opacity: 0.2;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .about1 {
+        margin-top: 100px;
+        .vertText {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 3em;
+            letter-spacing: -5px;
+         }
+         img {
+             width: 100%;
+             display: block;
+             margin: auto;
+             margin-bottom: 25px;
+         }
+         p {
+             width: 80%;
+             margin: auto;
+             text-align: center;
+             margin-bottom: 25px;
+         }
+    }
+    .about2 {
+        margin-top: 25px;
+        .vertText {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 3em;
+            letter-spacing: -10px;
+         }
+         img {
+             width: 100%; 
+             display: block;
+             margin: auto;
+             margin-bottom: 25px;
+         }
+         p {
+             width: 80%;
+             margin: auto;
+             text-align: center;
+             margin-bottom: 25px;
+         }
+    }
+    .donationHeading {
+        margin-top: 100px;
+        h1 {
+            text-align: right;
+            width: 50%;
+            margin-left: auto;
+            margin-bottom: 25px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            margin-top: 25px;
+        }
+    }
+    .provideBlock {
+        margin-top: 100px;
+        h1 {
+            margin-bottom: 25px;
+            width: 80%;
+            text-align: left;
+        }
+        .monkeyImg {
+            width: 100%;
+            height: 100%;
+        }
+        #donate-button {
+            margin-top: 10px;
+        }
+    }
+    .testimonialBlock {
+        margin-top: 100px;
+        h1 {
+            width: 60%;
+            margin: auto;
+        }
+        .test1 {
+            margin-top: 100px;
+        }
+        .test2 {
+            margin-top: 50px;
+        }
+        .test1, .test2 {
+            h4 {
+                text-align: center;
+                padding: 20px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .storeBlock {
+        .productBlock {
+            background-color: $teal;
+            box-sizing: border-box;
+            margin: auto;
+            height: 500px;
+            margin: 20px 0px;
+            padding: 20px;
+            img {
+                height: 200px;
+                width: 200px;
+                display: block;
+                margin: auto;
+            }
+            h3, h6 {
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            form {
+                input{
+                    display: block;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+                td {
+                    color: white;
+                    text-align: center;
+                    .os0 {
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    .cart {
+        input {
+            display: block;
+            margin: 20px auto;
+        }
+    }
+    .digitalBlock {
+        h1 {
+            width: 60%;
+            margin: 50px auto;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            width: 60%;
+            margin: 25px auto;
+        }
+        form {
+            input {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .cdBlock {
+        h1 {
+            width: 60%;
+            margin: 50px auto 50px auto;
+        }
+        p   {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+        .customButton {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 20px 60px;
+            border: none;
+            margin: auto;
+            margin-top: 30px;
+            width: 200px;
+            text-decoration: none;
+            transition: .5s;
+            &:hover {
+                background-color: rgb(68, 68, 68);
+                transition: .5s;
+            }
+        }
+    }
+    .contactBlock {
+        h1 {
+            margin-top: 100px;
+            text-align: left;
+            width: 60%;
+        }
+        h6 {
+            width: 60%;
+        }
+        form {
+            label {
+                display: block;
+                margin: 10px 0px 20px 0px;
+            }
+            input[type='text'], input[type='email'], textarea, select {
+                width: 100%;
+                background-color: #F7F7F7;
+                border: none;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            input[type='submit'] {
+                background-color: black;
+                color: white;
+                padding: 20px 60px;
+                border: none;
+                border-radius: 5px;
+                margin: auto;
+                margin-top: 10px;
+                transition: .5s;
+                &:hover {
+                    background-color: rgb(65, 65, 65);
+                    transition: .5s;
+                }
+            }
+            span.requiredRed {
+                color: red;
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $teal;
+    padding: 75px;
+    margin-top: 200px;
+    .footerCon {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        .siteMap {
+            img {
+                width: 60px;
+            }
+        }
+        .whiteLine {
+            border: 1px solid white;
+        }
+        h6 {
+            color: white;
+            margin-top: 20px;
+            $navFont: 'Work Sans', sans-serif;
+            font-size: large;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: .5s;
+                &:hover {
+                    transition: .5s;
+                    color: $green;
+                }
+            }
+            i {
+                margin-right: 10px;
+                margin-left: 10px;
+                font-size: larger;
+            }
+        }
+        .copy {
+            margin-top: 15px;
+            margin-left: 12px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .header1, .header2, .header3, .header4, .header5 {
+        height: 10vh;
+        .text-container {
+            display: none;
+        }
+        .overlay {
+            opacity: 1;
+        }
+    }
+    .navbar-collapse {
+        background-color: black;
+        position: relative;
+        z-index: 999;
+        width: 100%;
+    }
+    .bodyContainer {
+        .quote {
+            margin-top: 50px;
+            font-size: 3em;
+            text-align: center;
+        }
+        .sidePics {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .pic2{
+                height: 250px;
+            }
+            .pic1, .pic2, .pic3 {
+                margin-top: 10px;
+            }
+        }
+        .donateBlock {
+            margin: 50px 0px;
+            .numRaised {
+                margin-top: 20px;
+            }
+            .lower {
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+            .greatApeImg {
+                display: none;
+            }
+            #donate-button {
+                display: block;
+                margin: auto;
+            }
+        }
+        .carouselContainer {
+            margin-top: 25px;
+        }
+        .about1 {
+            margin-top: 50px;
+            .vertText {
+                writing-mode: unset;
+                font-size: 3em;
+                letter-spacing: unset;
+             }
+             p {
+                width: 100%;
+            }
+        }
+        .about2 {
+            margin-top: 25px;
+            .vertText {
+                display: none;
+             }
+             img {
+                 width: 50%;
+             }
+             p {
+                 width: 100%;
+             }
+        }
+        .donationHeading {
+            margin-top: 50px;
+            h1 {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            p {
+                width: 90%;
+            }
+        }
+        .provideBlock {
+            margin-top: 50px;
+            h1 {
+                margin-bottom: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            h3 {
+                text-align: center;
+            }
+            .monkeyImg {
+                display: none;
+            }
+            #donate-button {
+                display: block;
+                margin: auto;
+                margin-top: 25px;
+            }
+        }
+        .testimonialBlock {
+            margin-top: 50px;
+            h1 {
+                width: 100%;
+            }
+            .test1 {
+                margin-top: 50px;
+            }
+            .test2 {
+                margin-top: 25px;
+            }
+            .test1, .test2 {
+                h4 {
+                    font-size: medium;
+                }
+            }
+        }
+        .digitalBlock {
+            h1 {
+                width: 100%;
+                margin: 25px auto;
+            }
+            p {
+                width: 90%;
+                margin: 25px auto;
+            }
+        }
+        .cdBlock {
+            h1 {
+                width: 100%;
+                margin: 150px auto 75px auto;
+            }
+            p   {
+                width: 90%;
+            }
+            .customButton {
+                margin-bottom: 200px;
+            }
+        }
+        .contactBlock {
+            h1 {
+                margin-top: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+                width: 100%;
+            }
+            h6 {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        padding: 50px;
+        margin-top: 100px;
+        .footerCon {
+            h6 {
+                i {
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .h1Gone {
+        display: none;
+    }
+    .bodyContainer {
+        width: 95%;
+        .quote {
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+        .sidePics {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .donateBlock {
+            text-align: center;
+            margin: 50px 0px;
+            .numRaised {
+                margin-top: 10px;
+            }
+            .lower {
+                margin-top: 10px;
+            }
+        }
+        .carouselContainer {
+            display: none;
+        }
+        .donationHeading {
+            margin-top: 25px;
+        }
+        .provideBlock {
+            margin-top: 25px;
+        }
+        .testimonialBlock {
+            margin-top: 25px;
+            .test1 {
+                margin-top: 20px;
+            }
+            .test2 {
+                margin-top: 20px;
+            }
+        }
+        .cdBlock {
+            h1 {
+                width: 100%;
+                margin: 25px auto 25px auto;
+            }
+            .customButton {
+                margin-bottom: 100px;
+            }
+        }
+        .contactBlock {
+            h1 {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    footer {
+        padding: 20px 0px;
+        margin-top: 50px;
+    }
+}

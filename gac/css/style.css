@@ -1,0 +1,875 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+html p, body p {
+  font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6, .header-text {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  color: #4CB944;
+}
+
+span a {
+  text-decoration: none;
+  color: #4CB944;
+}
+
+span a:hover {
+  color: green;
+}
+
+#donate-button {
+  max-width: 200px;
+}
+
+nav.navbar {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  z-index: 99;
+}
+
+nav.navbar .container-fluid .navbar-toggler {
+  background-color: white;
+}
+
+nav.navbar .container-fluid .navbar-brand {
+  color: white;
+}
+
+nav.navbar .container-fluid .navbar-nav a {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav.navbar .container-fluid .navbar-nav a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #4CB944;
+}
+
+.header1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/indexHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header1 .overlay {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header1 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+}
+
+.header1 .text-container .header-text {
+  font-weight: bold;
+  font-size: 3.5em;
+  color: white;
+}
+
+.header2 {
+  position: relative;
+  height: 50vh;
+  background-image: url("../img/aboutHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header2 .overlay {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header2 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+}
+
+.header2 .text-container .header-text {
+  font-weight: bold;
+  font-size: 3.5em;
+  color: white;
+}
+
+.header3 {
+  position: relative;
+  height: 50vh;
+  background-image: url("../img/donationHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header3 .overlay {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header3 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+}
+
+.header3 .text-container .header-text {
+  font-weight: bold;
+  font-size: 3.5em;
+  color: white;
+}
+
+.header4 {
+  position: relative;
+  height: 50vh;
+  background-image: url("../img/storeHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header4 .overlay {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header4 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+}
+
+.header4 .text-container .header-text {
+  font-weight: bold;
+  font-size: 3.5em;
+  color: white;
+}
+
+.header5 {
+  position: relative;
+  height: 50vh;
+  background-image: url("../img/contactHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header5 .overlay {
+  background-color: black;
+  opacity: 0.55;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header5 .text-container {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+}
+
+.header5 .text-container .header-text {
+  font-weight: bold;
+  font-size: 3.5em;
+  color: white;
+}
+
+.bodyContainer {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.bodyContainer .quote {
+  margin-top: 100px;
+  font-size: 3em;
+  text-align: left;
+}
+
+.bodyContainer .sidePics {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.bodyContainer .sidePics h2 {
+  color: white;
+  position: relative;
+  z-index: 10;
+  padding: 20px 30px;
+}
+
+.bodyContainer .sidePics a {
+  text-decoration: none;
+}
+
+.bodyContainer .sidePics .pic1 {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  background-image: url(../img/home1.jpg);
+  position: relative;
+  margin: auto;
+}
+
+.bodyContainer .sidePics .pic1 .overlay {
+  background-color: black;
+  opacity: 0.25;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContainer .sidePics .pic2 {
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  background-image: url(../img/home2.jpg);
+  position: relative;
+  margin: auto;
+}
+
+.bodyContainer .sidePics .pic2 .overlay {
+  background-color: black;
+  opacity: 0.25;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContainer .sidePics .pic3 {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  background-image: url(../img/home3.jpg);
+  position: relative;
+  margin: auto;
+}
+
+.bodyContainer .sidePics .pic3 .overlay {
+  background-color: black;
+  opacity: 0.25;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContainer .sidePics .pic1, .bodyContainer .sidePics .pic3 {
+  margin-top: 100px;
+}
+
+.bodyContainer .donateBlock {
+  margin: 100px 0px;
+  width: 100%;
+}
+
+.bodyContainer .donateBlock .numRaised {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bodyContainer .donateBlock .lower {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.bodyContainer .donateBlock .greatApeImg {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+}
+
+.bodyContainer .carouselContainer {
+  margin: 50px 0px 0px 0px;
+  width: 100%;
+}
+
+.bodyContainer .carouselContainer .overlay {
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContainer .about1 {
+  margin-top: 100px;
+}
+
+.bodyContainer .about1 .vertText {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 3em;
+  letter-spacing: -5px;
+}
+
+.bodyContainer .about1 img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.bodyContainer .about1 p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.bodyContainer .about2 {
+  margin-top: 25px;
+}
+
+.bodyContainer .about2 .vertText {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 3em;
+  letter-spacing: -10px;
+}
+
+.bodyContainer .about2 img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.bodyContainer .about2 p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.bodyContainer .donationHeading {
+  margin-top: 100px;
+}
+
+.bodyContainer .donationHeading h1 {
+  text-align: right;
+  width: 50%;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.bodyContainer .donationHeading img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.bodyContainer .donationHeading p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.bodyContainer .provideBlock {
+  margin-top: 100px;
+}
+
+.bodyContainer .provideBlock h1 {
+  margin-bottom: 25px;
+  width: 80%;
+  text-align: left;
+}
+
+.bodyContainer .provideBlock .monkeyImg {
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContainer .provideBlock #donate-button {
+  margin-top: 10px;
+}
+
+.bodyContainer .testimonialBlock {
+  margin-top: 100px;
+}
+
+.bodyContainer .testimonialBlock h1 {
+  width: 60%;
+  margin: auto;
+}
+
+.bodyContainer .testimonialBlock .test1 {
+  margin-top: 100px;
+}
+
+.bodyContainer .testimonialBlock .test2 {
+  margin-top: 50px;
+}
+
+.bodyContainer .testimonialBlock .test1 h4, .bodyContainer .testimonialBlock .test2 h4 {
+  text-align: center;
+  padding: 20px;
+}
+
+.bodyContainer .testimonialBlock .test1 img, .bodyContainer .testimonialBlock .test2 img {
+  width: 100%;
+}
+
+.bodyContainer .storeBlock .productBlock {
+  background-color: #225560;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  height: 500px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.bodyContainer .storeBlock .productBlock img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.bodyContainer .storeBlock .productBlock h3, .bodyContainer .storeBlock .productBlock h6 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.bodyContainer .storeBlock .productBlock form input {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.bodyContainer .storeBlock .productBlock form td {
+  color: white;
+  text-align: center;
+}
+
+.bodyContainer .storeBlock .productBlock form td .os0 {
+  display: block;
+  margin: auto;
+}
+
+.bodyContainer .cart input {
+  display: block;
+  margin: 20px auto;
+}
+
+.bodyContainer .digitalBlock h1 {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.bodyContainer .digitalBlock img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.bodyContainer .digitalBlock p {
+  text-align: center;
+  width: 60%;
+  margin: 25px auto;
+}
+
+.bodyContainer .digitalBlock form input {
+  display: block;
+  margin: auto;
+}
+
+.bodyContainer .cdBlock h1 {
+  width: 60%;
+  margin: 50px auto 50px auto;
+}
+
+.bodyContainer .cdBlock p {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+.bodyContainer .cdBlock .customButton {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px 60px;
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.bodyContainer .cdBlock .customButton:hover {
+  background-color: #444444;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.bodyContainer .contactBlock h1 {
+  margin-top: 100px;
+  text-align: left;
+  width: 60%;
+}
+
+.bodyContainer .contactBlock h6 {
+  width: 60%;
+}
+
+.bodyContainer .contactBlock form label {
+  display: block;
+  margin: 10px 0px 20px 0px;
+}
+
+.bodyContainer .contactBlock form input[type='text'], .bodyContainer .contactBlock form input[type='email'], .bodyContainer .contactBlock form textarea, .bodyContainer .contactBlock form select {
+  width: 100%;
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.bodyContainer .contactBlock form input[type='submit'] {
+  background-color: black;
+  color: white;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.bodyContainer .contactBlock form input[type='submit']:hover {
+  background-color: #414141;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.bodyContainer .contactBlock form span.requiredRed {
+  color: red;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #225560;
+  padding: 75px;
+  margin-top: 200px;
+}
+
+footer .footerCon {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer .footerCon .siteMap img {
+  width: 60px;
+}
+
+footer .footerCon .whiteLine {
+  border: 1px solid white;
+}
+
+footer .footerCon h6 {
+  color: white;
+  margin-top: 20px;
+  font-size: large;
+}
+
+footer .footerCon h6 a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+footer .footerCon h6 a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #4CB944;
+}
+
+footer .footerCon h6 i {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: larger;
+}
+
+footer .footerCon .copy {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header1, .header2, .header3, .header4, .header5 {
+    height: 10vh;
+  }
+  .header1 .text-container, .header2 .text-container, .header3 .text-container, .header4 .text-container, .header5 .text-container {
+    display: none;
+  }
+  .header1 .overlay, .header2 .overlay, .header3 .overlay, .header4 .overlay, .header5 .overlay {
+    opacity: 1;
+  }
+  .navbar-collapse {
+    background-color: black;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+  }
+  .bodyContainer .quote {
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+  }
+  .bodyContainer .sidePics {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bodyContainer .sidePics .pic2 {
+    height: 250px;
+  }
+  .bodyContainer .sidePics .pic1, .bodyContainer .sidePics .pic2, .bodyContainer .sidePics .pic3 {
+    margin-top: 10px;
+  }
+  .bodyContainer .donateBlock {
+    margin: 50px 0px;
+  }
+  .bodyContainer .donateBlock .numRaised {
+    margin-top: 20px;
+  }
+  .bodyContainer .donateBlock .lower {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .bodyContainer .donateBlock .greatApeImg {
+    display: none;
+  }
+  .bodyContainer .donateBlock #donate-button {
+    display: block;
+    margin: auto;
+  }
+  .bodyContainer .carouselContainer {
+    margin-top: 25px;
+  }
+  .bodyContainer .about1 {
+    margin-top: 50px;
+  }
+  .bodyContainer .about1 .vertText {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    font-size: 3em;
+    letter-spacing: unset;
+  }
+  .bodyContainer .about1 p {
+    width: 100%;
+  }
+  .bodyContainer .about2 {
+    margin-top: 25px;
+  }
+  .bodyContainer .about2 .vertText {
+    display: none;
+  }
+  .bodyContainer .about2 img {
+    width: 50%;
+  }
+  .bodyContainer .about2 p {
+    width: 100%;
+  }
+  .bodyContainer .donationHeading {
+    margin-top: 50px;
+  }
+  .bodyContainer .donationHeading h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .bodyContainer .donationHeading p {
+    width: 90%;
+  }
+  .bodyContainer .provideBlock {
+    margin-top: 50px;
+  }
+  .bodyContainer .provideBlock h1 {
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .bodyContainer .provideBlock h3 {
+    text-align: center;
+  }
+  .bodyContainer .provideBlock .monkeyImg {
+    display: none;
+  }
+  .bodyContainer .provideBlock #donate-button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .bodyContainer .testimonialBlock {
+    margin-top: 50px;
+  }
+  .bodyContainer .testimonialBlock h1 {
+    width: 100%;
+  }
+  .bodyContainer .testimonialBlock .test1 {
+    margin-top: 50px;
+  }
+  .bodyContainer .testimonialBlock .test2 {
+    margin-top: 25px;
+  }
+  .bodyContainer .testimonialBlock .test1 h4, .bodyContainer .testimonialBlock .test2 h4 {
+    font-size: medium;
+  }
+  .bodyContainer .digitalBlock h1 {
+    width: 100%;
+    margin: 25px auto;
+  }
+  .bodyContainer .digitalBlock p {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .bodyContainer .cdBlock h1 {
+    width: 100%;
+    margin: 150px auto 75px auto;
+  }
+  .bodyContainer .cdBlock p {
+    width: 90%;
+  }
+  .bodyContainer .cdBlock .customButton {
+    margin-bottom: 200px;
+  }
+  .bodyContainer .contactBlock h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  .bodyContainer .contactBlock h6 {
+    display: none;
+  }
+  footer {
+    padding: 50px;
+    margin-top: 100px;
+  }
+  footer .footerCon h6 i {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .h1Gone {
+    display: none;
+  }
+  .bodyContainer {
+    width: 95%;
+  }
+  .bodyContainer .quote {
+    margin-top: 25px;
+    font-size: 1.5em;
+  }
+  .bodyContainer .sidePics {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .bodyContainer .donateBlock {
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .bodyContainer .donateBlock .numRaised {
+    margin-top: 10px;
+  }
+  .bodyContainer .donateBlock .lower {
+    margin-top: 10px;
+  }
+  .bodyContainer .carouselContainer {
+    display: none;
+  }
+  .bodyContainer .donationHeading {
+    margin-top: 25px;
+  }
+  .bodyContainer .provideBlock {
+    margin-top: 25px;
+  }
+  .bodyContainer .testimonialBlock {
+    margin-top: 25px;
+  }
+  .bodyContainer .testimonialBlock .test1 {
+    margin-top: 20px;
+  }
+  .bodyContainer .testimonialBlock .test2 {
+    margin-top: 20px;
+  }
+  .bodyContainer .cdBlock h1 {
+    width: 100%;
+    margin: 25px auto 25px auto;
+  }
+  .bodyContainer .cdBlock .customButton {
+    margin-bottom: 100px;
+  }
+  .bodyContainer .contactBlock h1 {
+    margin-top: 25px;
+  }
+  footer {
+    padding: 20px 0px;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
