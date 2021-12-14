@@ -1,0 +1,319 @@
+html, body {
+  height: 100%;
+}
+
+nav {
+    height: 7vh;
+    div.container-fluid {
+        div#navNavbar {
+            ul.navbar-nav {
+                li.nav-item {
+                    margin: auto 10px;
+                    a.nav-link {
+                        color: black;
+                        font-size: large;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header1 {
+    position: relative;
+    z-index: 10;
+    height: 43vh;
+    background-image: url('../img/homeHeader.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    .overlay {
+        background-color: black;
+        opacity: 0.30;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .text-container {
+        position: relative;
+        top: 20%;
+        text-align: center;
+        color: white;
+        .header-text {
+            font-weight: bold;
+            font-size: 4em;
+        }
+    }
+}
+
+.bodyCon {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    .homeCon {
+        text-align: center;
+        h1 {
+            margin-top: 75px;
+            margin-bottom: 25px;
+        }
+        h4 {
+            width: 70%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: black;
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            transition: .5s;
+            border: 2px solid black;
+            &:hover {
+                transition: .5s;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    .reviewsCon {
+        text-align: center;
+        h1 {
+            margin-top: 100px;
+        }
+        .reviewBlock {
+            width: 90%;
+            margin: 50px auto;
+            h2, h5 {
+                margin: 20px;
+            }
+            img {
+                display: block;
+                margin: 30px auto;
+                width: 100%;
+                height: 100%;
+                max-width: 500px;
+                max-height: 300px;
+            }
+            p {
+                width: 80%;
+                margin: 10px auto;
+            }
+            .buttonBlock {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                a {
+                    background-color: black;
+                    padding: 15px 30px;
+                    color: white;
+                    border: none;
+                    transition: .5s;
+                    border: 2px solid black;
+                    margin: 20px 20px;
+                    text-decoration: none;
+                    &:hover {
+                        transition: .5s;
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .formCon {
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        label {
+            display: block;
+            margin: 10px 0px;
+        }
+        input[type="text"], textarea, input[type="email"], input[type="date"] {
+            width: 100%;
+            border: none;
+            background-color: #f7f7f7;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 25px;
+            background-color: black;
+            padding: 15px 40px;
+            color: white;
+            border: none;
+            transition: .5s;
+            border: 2px solid black;
+            &:hover {
+                transition: .5s;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    padding: 75px;
+    margin-top: 100px;
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        i {
+            color: white;
+            font-size: 1.5em;
+        }
+        h6 {
+            color: white;
+            a {
+                color: white;
+                text-decoration: none;
+                transition: .75s;
+                padding: 5px 10px;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    transition: .75s;
+                }
+            }
+        }
+        .copy {
+            margin-top: 40px;
+        }
+    }
+}
+
+body.text-center {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    i {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}   
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+  
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.btn {
+    margin-top: 10px;
+    background-color: black;
+    transition: .5s;
+    border: none;
+    &:hover {
+        transition: .5s;
+        background-color: grey;
+    }
+}
+
+.requiredRed {
+    color: red;
+}
+
+.errorMessage {
+    h1 {
+        margin-top: 100px;
+        text-align: center;
+    }
+    button {
+        background-color: black;
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            transition: .5s;
+            border: 2px solid black;
+            display: block;
+            margin: 40px auto;
+            &:hover {
+                transition: .5s;
+                background-color: white;
+                color: black;
+            }
+    }
+}
+
+.sucMessage {
+    h1 {
+        margin-top: 100px;
+        text-align: center;
+    }
+}
+
+.errMSG {
+    color: red;
+}
+
+.honey {
+    display: none;
+}
+
+.deleteMSG {
+    text-align: center;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        display: block;
+        background-color: black;
+        color: white;
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        top: 10px;
+    }
+    nav {
+        height: 7vh;
+        div.container-fluid {
+            div#navNavbar {
+                ul.navbar-nav {
+                    li.nav-item {
+                        position: relative;
+                        z-index: 10;
+                        color: white;
+                        a.nav-link {
+                            color: white;
+                            font-size: large;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        padding: 25px 0px;
+        .container {
+            width: 100%;
+            h6 {
+                a {
+                    padding: 5px 0px;
+                }
+            }
+            .copy {
+                margin-top: 10px;
+            }
+        }
+    }
+}

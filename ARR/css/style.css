@@ -1,0 +1,352 @@
+html, body {
+  height: 100%;
+}
+
+nav {
+  height: 7vh;
+}
+
+nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item {
+  margin: auto 10px;
+}
+
+nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item a.nav-link {
+  color: black;
+  font-size: large;
+}
+
+.header1 {
+  position: relative;
+  z-index: 10;
+  height: 43vh;
+  background-image: url("../img/homeHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+
+.header1 .overlay {
+  background-color: black;
+  opacity: 0.30;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header1 .text-container {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  color: white;
+}
+
+.header1 .text-container .header-text {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.bodyCon {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.bodyCon .homeCon {
+  text-align: center;
+}
+
+.bodyCon .homeCon h1 {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.bodyCon .homeCon h4 {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.bodyCon .homeCon button {
+  background-color: black;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid black;
+}
+
+.bodyCon .homeCon button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+  color: black;
+}
+
+.bodyCon .reviewsCon {
+  text-align: center;
+}
+
+.bodyCon .reviewsCon h1 {
+  margin-top: 100px;
+}
+
+.bodyCon .reviewsCon .reviewBlock {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.bodyCon .reviewsCon .reviewBlock h2, .bodyCon .reviewsCon .reviewBlock h5 {
+  margin: 20px;
+}
+
+.bodyCon .reviewsCon .reviewBlock img {
+  display: block;
+  margin: 30px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.bodyCon .reviewsCon .reviewBlock p {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.bodyCon .reviewsCon .reviewBlock .buttonBlock {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bodyCon .reviewsCon .reviewBlock .buttonBlock a {
+  background-color: black;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid black;
+  margin: 20px 20px;
+  text-decoration: none;
+}
+
+.bodyCon .reviewsCon .reviewBlock .buttonBlock a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+  color: black;
+}
+
+.bodyCon .formCon h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.bodyCon .formCon label {
+  display: block;
+  margin: 10px 0px;
+}
+
+.bodyCon .formCon input[type="text"], .bodyCon .formCon textarea, .bodyCon .formCon input[type="email"], .bodyCon .formCon input[type="date"] {
+  width: 100%;
+  border: none;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.bodyCon .formCon input[type="submit"] {
+  margin-top: 25px;
+  background-color: black;
+  padding: 15px 40px;
+  color: white;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid black;
+}
+
+.bodyCon .formCon input[type="submit"]:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  padding: 75px;
+  margin-top: 100px;
+}
+
+footer .container {
+  width: 80%;
+  max-width: 1000px;
+}
+
+footer .container i {
+  color: white;
+  font-size: 1.5em;
+}
+
+footer .container h6 {
+  color: white;
+}
+
+footer .container h6 a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .75s;
+  transition: .75s;
+  padding: 5px 10px;
+}
+
+footer .container h6 a:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: .75s;
+  transition: .75s;
+}
+
+footer .container .copy {
+  margin-top: 40px;
+}
+
+body.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+body.text-center i {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: none;
+}
+
+.btn:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: grey;
+}
+
+.requiredRed {
+  color: red;
+}
+
+.errorMessage h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.errorMessage button {
+  background-color: black;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid black;
+  display: block;
+  margin: 40px auto;
+}
+
+.errorMessage button:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: white;
+  color: black;
+}
+
+.sucMessage h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.errMSG {
+  color: red;
+}
+
+.honey {
+  display: none;
+}
+
+.deleteMSG {
+  text-align: center;
+  margin: 100px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    display: block;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    top: 10px;
+  }
+  nav {
+    height: 7vh;
+  }
+  nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item {
+    position: relative;
+    z-index: 10;
+    color: white;
+  }
+  nav div.container-fluid div#navNavbar ul.navbar-nav li.nav-item a.nav-link {
+    color: white;
+    font-size: large;
+  }
+  footer {
+    padding: 25px 0px;
+  }
+  footer .container {
+    width: 100%;
+  }
+  footer .container h6 a {
+    padding: 5px 0px;
+  }
+  footer .container .copy {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
